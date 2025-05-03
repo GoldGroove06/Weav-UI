@@ -1,0 +1,26 @@
+{
+  "name": "weav-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldGroove06/Weav-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoldGroove06/Weav-UI/issues"
+  },
+  "homepage": "https://github.com/GoldGroove06/Weav-UI#readme",
+  "dependencies": {
+    "@radui/ui": "^0.0.38",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.507.0",
+    "react": "^19.1.0"
+  }
+}
