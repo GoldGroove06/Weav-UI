@@ -6,12 +6,15 @@ import { ChevronDown } from "lucide-react";
 import clsx from "clsx";
 
 // Root component
-const Root = Accordion.Root;
+const Root = ({ children }) => 
+<Accordion.Root>
+  {children}
+</Accordion.Root>;
 
 // Item
 const Item = 
   ({ className, ...props }) => (
-    <Accordion.Item  className={clsx("border-b", className)} {...props} />
+    <Accordion.Item  className={clsx("", className)} {...props} />
   )
 
 Item.displayName =  Accordion.Item.displayName;
@@ -20,7 +23,7 @@ Item.displayName =  Accordion.Item.displayName;
 const Header = 
   ({ className, ...props }) => (
     <Accordion.Header
-      className={clsx("flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180", className)}
+      className={clsx("flex flex-1 items-center justify-between font-medium transition-all [&[data-state=open]>svg]:rotate-180", className)}
       {...props}
     />
   )
@@ -33,7 +36,7 @@ const Trigger =
     <Accordion.Trigger
 
       className={clsx(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:-translate-y-1 [&[data-state=open]>svg]:rotate-180",
         className
       )}
       {...props}
