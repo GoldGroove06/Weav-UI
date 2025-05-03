@@ -1,6 +1,5 @@
 "use client"
 import {WeavAccordion} from "@/components/Accordion"
-import Button from "@radui/ui/Button"
 
 export default function Home() {
   const items = [
@@ -19,10 +18,11 @@ export default function Home() {
   ]
   return (
     <div className="flex flex-col gap-4 h-screen bg-black text-white items-center">
-      <Button >Button</Button>
+      
       Weav UI
       
       <div className="w-64 md:w-96">
+        Accordion
     <WeavAccordion.Root>
       {items.map((item, index) => (
         <WeavAccordion.Item key={index} value={`item-${index}`}>
