@@ -1,5 +1,7 @@
 "use client"
-import {WeavAccordion} from "@/components/Accordion"
+
+import Link from "next/link";
+
 
 export default function Home() {
   const items = [
@@ -18,22 +20,9 @@ export default function Home() {
   ]
   return (
     <div className="flex flex-col gap-4 h-screen bg-black text-white items-center">
-      
-      Weav UI
-      Changes
-      <div className="w-64 md:w-96">
-        Accordion
-    <WeavAccordion.Root>
-      {items.map((item, index) => (
-        <WeavAccordion.Item key={index} value={`item-${index}`}>
-          <WeavAccordion.Header>
-            <WeavAccordion.Trigger index={index}>{item.title}</WeavAccordion.Trigger>
-          </WeavAccordion.Header>
-          <WeavAccordion.Content index={index}>{item.content}</WeavAccordion.Content>
-        </WeavAccordion.Item>
-      ))}
-    </WeavAccordion.Root>
-  </div>
+
+      <Link href="/components/accordion">Accordion</Link>
+      <Link href="/components/badge">Badge</Link>
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <body>
+      <body className="h-screen text-white">
+        <Navbar/>
         {children}
       </body>
     </html>
