@@ -4,7 +4,10 @@ import WeavBadge from "@/components/Badge"
 
 function page() {
     return (
-        <div>
+
+        <div className='flex space-x-2 bg-black h-screen flex-col items-center'>
+            Badge component
+
             <WeavBadge>
                 Badge
             </WeavBadge>
