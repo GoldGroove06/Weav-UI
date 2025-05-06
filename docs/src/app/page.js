@@ -20,7 +20,7 @@ export default function Home() {
     <div className="flex flex-col gap-4 h-screen bg-black text-white items-center">
       
       Weav UI
-      
+      Changes
       <div className="w-64 md:w-96">
         Accordion
     <WeavAccordion.Root>
