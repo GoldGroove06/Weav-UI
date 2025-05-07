@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 // Root component
 const Root = ({ children }) => 
-<Accordion.Root>
+<Accordion.Root customRootClass = "weav-accordion">
   {children}
 </Accordion.Root>;
 
