@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Accordion from './Accordion';
+import Button from './Button';
 
 const meta = {
-  component: Accordion,
-} satisfies Meta<typeof Accordion>;
+  component: Button,
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
