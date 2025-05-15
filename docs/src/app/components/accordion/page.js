@@ -1,5 +1,5 @@
 "use client"
-import {WeavAccordion} from "@/components/Accordion"
+import Accordion from "@/components/Accordion"
 
 export default function AccordionPage() {
   const items = [
@@ -23,16 +23,16 @@ export default function AccordionPage() {
       
       <div className="w-64 md:w-96">
         Accordion
-    <WeavAccordion.Root>
+    <Accordion.Root>
       {items.map((item, index) => (
-        <WeavAccordion.Item key={index} value={`item-${index}`}>
-          <WeavAccordion.Header>
-            <WeavAccordion.Trigger index={index}>{item.title}</WeavAccordion.Trigger>
-          </WeavAccordion.Header>
-          <WeavAccordion.Content index={index}>{item.content}</WeavAccordion.Content>
-        </WeavAccordion.Item>
+        <Accordion.Item key={index} value={`item-${index}`}>
+          <Accordion.Header>
+            <Accordion.Trigger index={index}>{item.title}</Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content index={index}>{item.content}</Accordion.Content>
+        </Accordion.Item>
       ))}
-    </WeavAccordion.Root>
+    </Accordion.Root>
   </div>
     </div>
   );
