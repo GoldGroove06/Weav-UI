@@ -5,15 +5,20 @@ import Link from "next/link";
 
 
 export default function Home() {
- 
+  const compList = [
+    "accordion",
+    "badge",
+    "button",
+    "card",
+    "code",
+    "toggle"
+  ]
   return (
-    <div className="flex flex-col gap-4 h-screen bg-black text-white items-center">
+    <div className="flex flex-col gap-4 text-white items-center">
 
-
-      <Link href="/components/accordion">Accordion</Link>
-      <Link href="/components/badge">Badge</Link>
-
-    
+      {compList.map((comp, index) => (
+        <Link href={`/components/${comp}`} key={index}>{comp}</Link>
+      ))}
 
     </div>
   );
