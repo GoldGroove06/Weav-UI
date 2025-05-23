@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-4 text-white items-center">
 
-      {compList.map((comp) => (
-        <Link href={`/components/${comp}`}>{comp}</Link>
+      {compList.map((comp, index) => (
+        <Link href={`/components/${comp}`} key={index}>{comp}</Link>
       ))}
 
     </div>
