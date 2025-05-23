@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <body className="h-screen">
+      <body className="h-screen"  style={{ background: 'linear-gradient(135deg, #2c003e, #000428, #6a0572)' }}>
       <ThemeProvider>
        
         {children}
