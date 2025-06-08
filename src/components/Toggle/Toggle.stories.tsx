@@ -1,34 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
-import Button from './Button';
+import Toggle from './Toggle';
 
 const meta = {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Toggle',
+  component: Toggle,
   tags: ['autodocs'],
   argTypes: {
     children: { control: 'text' },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Toggle>;
 
 export default meta;
-
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Click me',
+    children: 'Toggle me',
   },
 };
 
 export const WithCustomText: Story = {
   args: {
-    children: 'Custom Button',
+    children: 'Custom Toggle Text',
   },
-};
-
-export const WithLongText: Story = {
-  args: {
-    children: 'This is a button with longer text content',
-  },
-};
+}; 
